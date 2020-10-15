@@ -1,3 +1,4 @@
+[![logo](https://raw.githubusercontent.com/metwork-framework/resources/master/logos/metwork-white-logo-small.png)](http://www.metwork-framework.org)
 # docker-mfext-centos8-buildimage
 
 [//]: # (automatically generated from https://github.com/metwork-framework/github_organization_management/blob/master/common_files/README.md)
@@ -9,8 +10,16 @@
 [![Drone CI](http://metwork-framework.org:8000/api/badges/metwork-framework/docker-mfext-centos8-buildimage/status.svg)](http://metwork-framework.org:8000/metwork-framework/docker-mfext-centos8-buildimage)
 [![DockerHub](https://github.com/metwork-framework/resources/blob/master/badges/dockerhub_link.svg)](https://hub.docker.com/r/metwork/docker-mfext-centos8-buildimage/)
 [![Maintenance](https://github.com/metwork-framework/resources/blob/master/badges/maintained.svg)]()
+[![Gitter](https://github.com/metwork-framework/resources/blob/master/badges/community-en.svg)](https://gitter.im/metwork-framework/community-en?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://github.com/metwork-framework/resources/blob/master/badges/community-fr.svg)](https://gitter.im/metwork-framework/community-fr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
+
+## What is MetWork FrameWork?
+
+[MetWork Framework](https://metwork-framework.org) is an opensource system
+for building and managing production grade applications or micro-services
+(from development to operations).
 
 
 
