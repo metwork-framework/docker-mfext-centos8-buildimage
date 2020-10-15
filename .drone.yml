@@ -43,14 +43,5 @@ pipeline:
     when:
       event: push
 
-  trigger:
-    <<: *trigger_common
-    repositories:
-      - metwork-framework/mfext@${DRONE_BRANCH}
-    when:
-      status: success
-      event: push
-
-
 
 branches: [ master, integration, experimental*, release_* ]

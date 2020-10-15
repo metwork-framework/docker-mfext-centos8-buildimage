@@ -6,7 +6,7 @@
 
 
 
-[![GitHub CI](https://github.com/metwork-framework/docker-mfext-centos8-buildimage/workflows/CI/badge.svg?branch=master)](https://github.com/metwork-framework/docker-mfext-centos8-buildimage/actions?query=workflow%3ACI&branch=master)
+[![Drone CI](http://metwork-framework.org:8000/api/badges/metwork-framework/docker-mfext-centos8-buildimage/status.svg)](http://metwork-framework.org:8000/metwork-framework/docker-mfext-centos8-buildimage)
 [![DockerHub](https://github.com/metwork-framework/resources/blob/master/badges/dockerhub_link.svg)](https://hub.docker.com/r/metwork/docker-mfext-centos8-buildimage/)
 [![Maintenance](https://github.com/metwork-framework/resources/blob/master/badges/maintained.svg)]()
 
