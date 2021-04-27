@@ -25,11 +25,14 @@ esac
 if [ -z ${BRANCH} ]; then
   BRANCH=null
 fi
-TAG_BRANCH="metwork/mfext-centos8-buildimage:${BRANCH}"
 TAG_LATEST=""
+
+TAG_BRANCH="metwork/mfext-centos8-buildimage:${BRANCH}"
 if test "${BRANCH}" = "master"; then
     TAG_LATEST="metwork/mfext-centos8-buildimage:latest"
 fi 
+
+
 echo "::set-output name=branch::${BRANCH}"
 echo "::set-output name=tag_branch::${TAG_BRANCH}"
 echo "::set-output name=tag_latest::${TAG_LATEST}"
