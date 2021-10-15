@@ -58,4 +58,3 @@ jobs:
           client-payload: '{"branch": "${{ steps.SetVariables.outputs.branch }}", "os": "centos8"}'
 
 
-
