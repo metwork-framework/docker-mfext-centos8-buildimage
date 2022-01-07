@@ -57,3 +57,4 @@ jobs:
           event-type: metwork-trigger-${{ steps.SetVariables.outputs.branch }}
           client-payload: '{"branch": "${{ steps.SetVariables.outputs.branch }}", "os": "centos8"}'
 
+
