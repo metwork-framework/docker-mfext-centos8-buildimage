@@ -1,4 +1,4 @@
-FROM rockylinux:8
+FROM rockylinux:8.5
 
 RUN yum -y install epel-release yum-utils
 RUN yum-config-manager --enable powertools
