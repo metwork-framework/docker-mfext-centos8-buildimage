@@ -6,4 +6,3 @@ RUN yum -y install openldap-devel createrepo wget bzip2 patch make cmake cmake3 
 RUN wget https://dl.rockylinux.org/pub/rocky/8/PowerTools/x86_64/os/Packages/a/antlr-C++-2.7.7-56.module+el8.3.0+74+855e3f5d.x86_64.rpm
 RUN wget https://dl.rockylinux.org/pub/rocky/8/PowerTools/x86_64/os/Packages/a/antlr-tool-2.7.7-56.module+el8.3.0+74+855e3f5d.noarch.rpm
 RUN yum -y install ./antlr-C++-2.7.7-56.module+el8.3.0+74+855e3f5d.x86_64.rpm ./antlr-tool-2.7.7-56.module+el8.3.0+74+855e3f5d.noarch.rpm
->>>>>>> 923350b (build: add antlr-C++ and antlr-tool (#40))
