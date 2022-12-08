@@ -1,5 +1,6 @@
 FROM rockylinux:8.5
 
+RUN cp -R /usr/lib64/libjson-c.so.4.0.0 /usr/lib64/libjson-c.so.4.0.0.ori
 RUN yum -y install epel-release yum-utils
 RUN yum-config-manager --enable powertools
 RUN dnf module -y enable javapackages-tools
@@ -7,3 +8,4 @@ RUN yum -y install openldap-devel createrepo wget bzip2 patch make cmake cmake3 
 ADD make_openblas_pc.sh /root
 RUN chmod +x /root/make_openblas_pc.sh && /root/make_openblas_pc.sh
 RUN yum -y install initscripts vim coreutils-common
+RUN mv /usr/lib64/libjson-c.so.4.0.0 /usr/lib64/libjson-c.so.4.0.0.new && cp -R /usr/lib64/libjson-c.so.4.0.0.ori /usr/lib64/libjson-c.so.4.0.0
