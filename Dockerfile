@@ -1,5 +1,9 @@
 FROM rockylinux:8.5
 
+ENV DCO_CRONIE_START=1 \
+    S6_KEEP_ENV=1 \
+    S6_BEHAVIOUR_IF_STAGE2_FAILS=1
+
 RUN cp -R /usr/lib64/libjson-c.so.4.0.0 /usr/lib64/libjson-c.so.4.0.0.ori
 RUN yum -y install epel-release yum-utils
 RUN yum-config-manager --enable powertools
@@ -10,3 +14,10 @@ ADD make_openblas_pc.sh /root
 RUN chmod +x /root/make_openblas_pc.sh && /root/make_openblas_pc.sh
 RUN yum -y install initscripts vim coreutils-common cronie
 RUN mv /usr/lib64/libjson-c.so.4.0.0 /usr/lib64/libjson-c.so.4.0.0.new && cp -R /usr/lib64/libjson-c.so.4.0.0.ori /usr/lib64/libjson-c.so.4.0.0
+COPY root /
+RUN /build/s6_overlay.sh && \
+    yum clean all && \
+    rm -Rf /build
+
+ENTRYPOINT ["/init"]
+
