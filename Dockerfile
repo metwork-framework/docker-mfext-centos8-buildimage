@@ -1,4 +1,8 @@
-FROM rockylinux:8.5
+FROM rockylinux/rockylinux:8.5
+
+ENV DCO_CRONIE_START=1 \
+    S6_KEEP_ENV=1 \
+    S6_BEHAVIOUR_IF_STAGE2_FAILS=1
 
 ENV DCO_CRONIE_START=1 \
     S6_KEEP_ENV=1 \
