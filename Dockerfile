@@ -14,7 +14,8 @@ ADD make_openblas_pc.sh /root
 RUN chmod +x /root/make_openblas_pc.sh && /root/make_openblas_pc.sh
 RUN yum -y install initscripts vim coreutils-common cronie
 RUN mv /usr/lib64/libjson-c.so.4.0.0 /usr/lib64/libjson-c.so.4.0.0.new && cp -R /usr/lib64/libjson-c.so.4.0.0.ori /usr/lib64/libjson-c.so.4.0.0
-RUN cd /usr/lib64 && ln -s /opt/metwork-mfext/opt/core/lib/libssl.so libssl.so && ln -s /opt/metwork-mfext/opt/core/lib/libcrypto.so libcrypto.so
+#Below a (dangerous) workaround to allow build of openresty with built-in openssl
+RUN  chmod 777 /usr/lib64
 COPY root /
 RUN /build/s6_overlay.sh && \
     yum clean all && \
