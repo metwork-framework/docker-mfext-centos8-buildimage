@@ -8,5 +8,6 @@
 - add libzstd-devel for zstd support in PostGreSQL (#78)
 - add lz4 devel for lz4 support in PostGreSQL (#79)
 - add mpich-devel (for eckit and Metview) (#81)
+- add gcc-toolset-11 for gcc 11 (#82)
 
 
