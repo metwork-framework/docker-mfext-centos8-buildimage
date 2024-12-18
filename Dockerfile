@@ -13,9 +13,6 @@ RUN yum -y install createrepo wget bzip2 patch make cmake cmake3 ctags automake 
 #Install scl gcc-toolset-11
 RUN yum -y install gcc-toolset-11 gcc-toolset-11-annobin-plugin-gcc
 RUN cd /opt/rh/gcc-toolset-11/root/usr/lib/gcc/x86_64-redhat-linux/11/plugin && ln -s annobin.so gcc-annobin.so
-#openssl-devel required for cargo-c
-RUN yum -y install openssl-devel
-RUN cargo install cargo-c@0.10.4+cargo-0.82.0 --locked
 ADD make_openblas_pc.sh /root
 RUN chmod +x /root/make_openblas_pc.sh && /root/make_openblas_pc.sh
 RUN yum -y install initscripts vim coreutils-common cronie
