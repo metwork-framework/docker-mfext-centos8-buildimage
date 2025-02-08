@@ -12,5 +12,7 @@
 - add cargo-c (#83)
 - remove mpich-devel and add libgs-devel (#86)
 - (revert) remove libgs-devel (libtiff incompatibility) (#87)
+- add qt5-qtbase-devel (for Metview interface) (#88)
+- add Qt5 XmlPatterns and Svg devels (#89)
 
 
