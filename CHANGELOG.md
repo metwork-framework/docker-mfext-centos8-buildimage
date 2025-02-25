@@ -15,5 +15,6 @@
 - add qt5-qtbase-devel (for Metview interface) (#88)
 - add Qt5 XmlPatterns and Svg devels (#89)
 - remove libtiff-devel (libtiff is now built-in)
+- add libzip-devel (#91)
 
 
