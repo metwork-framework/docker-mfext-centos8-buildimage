@@ -16,5 +16,6 @@
 - add Qt5 XmlPatterns and Svg devels (#89)
 - remove libtiff-devel (libtiff is now built-in)
 - add libzip-devel (#91)
+- add Xaw3d-devel (for gv build) (#93)
 
 
