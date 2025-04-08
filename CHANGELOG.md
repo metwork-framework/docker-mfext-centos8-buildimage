@@ -17,5 +17,6 @@
 - remove libtiff-devel (libtiff is now built-in)
 - add libzip-devel (#91)
 - add Xaw3d-devel (for gv build) (#93)
+- remove jasper system rpms (as we are building it now) (#96)
 
 
