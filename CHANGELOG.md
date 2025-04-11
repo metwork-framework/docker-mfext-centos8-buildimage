@@ -18,5 +18,6 @@
 - add libzip-devel (#91)
 - add Xaw3d-devel (for gv build) (#93)
 - remove jasper system rpms (as we are building it now) (#96)
+- revert : jasper-devel is required to build g2clib (#97)
 
 
