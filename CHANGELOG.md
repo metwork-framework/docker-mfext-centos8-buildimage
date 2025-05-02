@@ -21,5 +21,6 @@
 - revert : jasper-devel is required to build g2clib (#97)
 - add lttng-ust-devel (for aspose in python3_extratools) (#98)
 - add libgs-devel (for ImageMagick6 --with-gslib) (#99)
+- revert "feat: add libgs-devel" (#100)
 
 
