@@ -22,5 +22,6 @@
 - add lttng-ust-devel (for aspose in python3_extratools) (#98)
 - add libgs-devel (for ImageMagick6 --with-gslib) (#99)
 - revert "feat: add libgs-devel" (#100)
+- add blosc-devel (for blosc support in gdal) (backport #102) (#103)
 
 
