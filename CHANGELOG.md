@@ -23,5 +23,6 @@
 - add libgs-devel (for ImageMagick6 --with-gslib) (#99)
 - revert "feat: add libgs-devel" (#100)
 - add blosc-devel (for blosc support in gdal) (backport #102) (#103)
+- add perl-Time-Piece (for openssl>=3.5.3) (backport #105) (#106)
 
 
