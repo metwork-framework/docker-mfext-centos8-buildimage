@@ -10,5 +10,6 @@
 - remove libaec-devel (libaec is now built in layer core) (#108)
 - add libpsl-devel to build curl 8.22 (#112)
 - add libatomic (recent nodejs links with libatomic.so.1) (backport #115) (#116)
+- add gmp-devel and gmp.pc (for postgis 3.7.0)
 
 
