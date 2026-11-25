@@ -4,6 +4,7 @@
 
 ### New Features
 
+- add libatomic (recent nodejs links with libatomic.so.1) (#115)
 - add blosc-devel (for blosc support in gdal) (#102)
 - add perl-Time-Piece (for openssl>=3.5.3) (#105)
 - add pandoc (for pgbouncer build)
